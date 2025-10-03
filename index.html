@@ -14,31 +14,38 @@
     }
     .schools {
       display: flex;
-      gap: 40px; /* space between the two columns */
+      gap: 40px;
       justify-content: center;
-      align-items: flex-start; /* align tops */
+      align-items: flex-start;
     }
     .school {
       background: #fff;
       padding: 15px;
       border: 1px solid #ddd;
       border-radius: 8px;
-      flex: 1; /* make them equal width */
+      flex: 1;
     }
     .link-item {
       margin-bottom: 15px;
     }
     .desc {
       font-weight: bold;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
-    a {
-      display: block;
-      color: #0066cc;
+    .btn-link {
+      display: inline-block;
+      padding: 8px 14px;
+      border: none;
+      background: #0066cc;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    .btn-link:hover {
+      background: #004999;
     }
   </style>
 </head>
@@ -49,24 +56,33 @@
     <!-- Song Wu -->
     <div class="school">
       <h2>Song Wu</h2>
-      <div class="link-item"><div class="desc">Grade 1</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 2</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 3</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 4</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 5</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 6</div><a href="#" target="_blank">Link</a></div>
+      <div class="link-item"><div class="desc">Grade 1</div><a href="https://www.google.com" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 3</div><a href="https://wikipedia.org" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 4</div><a href="#" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 5</div><a href="https://news.ycombinator.com" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 6</div><a href="" target="_blank" class="btn-link">Open</a></div>
     </div>
 
     <!-- Yang Ming -->
     <div class="school">
       <h2>Yang Ming</h2>
-      <div class="link-item"><div class="desc">Grade 1</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 2</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 3</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 4</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 5</div><a href="#" target="_blank">Link</a></div>
-      <div class="link-item"><div class="desc">Grade 6</div><a href="#" target="_blank">Link</a></div>
+      <div class="link-item"><div class="desc">Grade 1</div><a href="https://www.google.com" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 2</div><a href="#" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 3</div><a href="" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 4</div><a href="https://wikipedia.org" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 5</div><a href="#" target="_blank" class="btn-link">Open</a></div>
+      <div class="link-item"><div class="desc">Grade 6</div><a href="https://news.ycombinator.com" target="_blank" class="btn-link">Open</a></div>
     </div>
   </div>
+
+  <script>
+    // Hide buttons if link is missing or placeholder
+    document.querySelectorAll(".btn-link").forEach(btn => {
+      if (!btn.getAttribute("href") || btn.getAttribute("href") === "#" ) {
+        btn.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
