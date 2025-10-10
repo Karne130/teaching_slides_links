@@ -11,13 +11,46 @@
     }
     h1 {
       text-align: center;
+      margin-bottom: 30px;
+    }
+    .accordion-section {
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: #fff;
+      overflow: hidden;
+    }
+    .accordion-header {
+      background: #0066cc;
+      color: white;
+      padding: 12px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .accordion-header:hover {
+      background: #004999;
+    }
+    .accordion-header span {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background: #fff;
+    }
+    .accordion-content.active {
+      display: block;
     }
     .schools {
       display: flex;
       gap: 40px;
       justify-content: center;
       align-items: flex-start;
-      margin-bottom: 40px;
     }
     .school {
       background: #fff;
@@ -58,63 +91,86 @@
 </head>
 <body>
   <h1>My Slides Links</h1>
-  
-  <!-- 14/07??? -->
-  <div class="schools">
-    <!-- Song Wu -->
-    <div class="school songwu">
-      <h2>Date: 2025/10/10 - Week ?<br>Song Wu</h2>
-      <div class="link-item"><div class="desc">Grade 1</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 3</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 4</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 5</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 6</div><a href="" target="_blank" class="btn-link">Open</a></div>
-    </div>
 
-    <!-- Yang Ming -->
-    <div class="school yangming">
-      <h2>Date: 2025/14/07 - Week 5<br>Yang Ming</h2>
-      <div class="link-item"><div class="desc">Grade 1</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 3</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 4</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 5</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 6</div><a href="" target="_blank" class="btn-link">Open</a></div>
+  <!-- 14/07??? -->
+  <div class="accordion-section">
+    <div class="accordion-header">2# <span>(2025/10/10)</span></div>
+    <div class="accordion-content active">
+      <div class="schools">
+        <div class="school songwu">
+          <h2>Song Wu</h2>
+          <div class="link-item"><div class="desc">Grade 1</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 3</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 4</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 5</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 6</div><a href="" target="_blank" class="btn-link">Open</a></div>
+        </div>
+
+        <div class="school yangming">
+          <h2>Yang Ming</h2>
+          <div class="link-item"><div class="desc">Grade 1</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 3</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 4</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 5</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 6</div><a href="" target="_blank" class="btn-link">Open</a></div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- 08/01/2025 -->
-  <div class="schools">
-    <!-- Song Wu -->
-    <div class="school songwu">
-      <h2>Date: 2025/10/08 - Week 5<br>Song Wu</h2>
-      <div class="link-item"><div class="desc">Grade 1 - Up 1</div><a href="https://www.canva.com/design/DAG0vN7R_os/Cndipr1Kqb-bjGdsuejQ0A/edit?utm_content=DAG0vN7R_os&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 2 - Up 1</div><a href="https://www.canva.com/design/DAG0vMf4Ruk/3-mqvPmG5SE46sewJbLHpA/edit?utm_content=DAG0vMf4Ruk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 3 - Up 2</div><a href="https://www.canva.com/design/DAG0vsI9WM4/MQeCbZGC8SZ1TjfZHjbPow/edit?utm_content=DAG0vsI9WM4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 4 - Up 0</div><a href="https://www.canva.com/design/DAG0zHrv3J8/OvfZF-Vzi01vcOCUYpfElg/edit?utm_content=DAG0zHrv3J8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 5 - Up 1</div><a href="https://www.canva.com/design/DAG00MX2hMk/R_UBjUSPKx58DDkYUJRnZQ/edit?utm_content=DAG00MX2hMk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 6 - Up 1</div><a href="https://www.canva.com/design/DAG0zR6BajU/MJdU6DAl-uK1friHPPvWjw/edit?utm_content=DAG0zR6BajU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-    </div>
+  <!-- Week 5 -->
+  <div class="accordion-section">
+    <div class="accordion-header">1#<span>(2025/10/03)</span></div>
+    <div class="accordion-content">
+      <div class="schools">
+        <div class="school songwu">
+          <h2>Song Wu</h2>
+          <div class="link-item"><div class="desc">Grade 1 - Up 1</div><a href="https://www.canva.com/design/DAG0vN7R_os/Cndipr1Kqb-bjGdsuejQ0A/edit?utm_content=DAG0vN7R_os&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 2 - Up 1</div><a href="https://www.canva.com/design/DAG0vMf4Ruk/3-mqvPmG5SE46sewJbLHpA/edit?utm_content=DAG0vMf4Ruk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 3 - Up 2</div><a href="https://www.canva.com/design/DAG0vsI9WM4/MQeCbZGC8SZ1TjfZHjbPow/edit?utm_content=DAG0vsI9WM4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 4 - Up 0</div><a href="https://www.canva.com/design/DAG0zHrv3J8/OvfZF-Vzi01vcOCUYpfElg/edit?utm_content=DAG0zHrv3J8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 5 - Up 1</div><a href="https://www.canva.com/design/DAG00MX2hMk/R_UBjUSPKx58DDkYUJRnZQ/edit?utm_content=DAG00MX2hMk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 6 - Up 1</div><a href="https://www.canva.com/design/DAG0zR6BajU/MJdU6DAl-uK1friHPPvWjw/edit?utm_content=DAG0zR6BajU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+        </div>
 
-    <!-- Yang Ming -->
-    <div class="school yangming">
-      <h2>Date: 2025/10/07 - Week 3<br>Yang Ming</h2>
-      <div class="link-item"><div class="desc">Grade 1</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 3 - Up 1</div><a href="https://www.canva.com/design/DAG00WM2n3w/SUBsr9hnUSCEtnNZ6hJpQA/edit?utm_content=DAG00WM2n3w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 4</div><a href="" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 5 - Up 3</div><a href="https://www.canva.com/design/DAG0tmo5ovA/KuHM_tJKoWx7_r_6osDmSQ/edit?utm_content=DAG0tmo5ovA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
-      <div class="link-item"><div class="desc">Grade 6 - Up 0</div><a href="https://www.canva.com/design/DAG0u418Ak8/q2W8A6qo5YHpWAafP9t4hQ/edit?utm_content=DAG0u418Ak8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+        <div class="school yangming">
+          <h2>Yang Ming</h2>
+          <div class="link-item"><div class="desc">Grade 1</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 2</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 3 - Up 1</div><a href="https://www.canva.com/design/DAG00WM2n3w/SUBsr9hnUSCEtnNZ6hJpQA/edit?utm_content=DAG00WM2n3w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 4</div><a href="" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 5 - Up 3</div><a href="https://www.canva.com/design/DAG0tmo5ovA/KuHM_tJKoWx7_r_6osDmSQ/edit?utm_content=DAG0tmo5ovA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+          <div class="link-item"><div class="desc">Grade 6 - Up 0</div><a href="https://www.canva.com/design/DAG0u418Ak8/q2W8A6qo5YHpWAafP9t4hQ/edit?utm_content=DAG0u418Ak8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link">Open</a></div>
+        </div>
+      </div>
     </div>
   </div>
 
   <script>
-    // Hide buttons if link is missing or placeholder
+    // Hide buttons with no links
     document.querySelectorAll(".btn-link").forEach(btn => {
-      if (!btn.getAttribute("href") || btn.getAttribute("href") === "#" ) {
+      if (!btn.getAttribute("href") || btn.getAttribute("href") === "#") {
         btn.style.display = "none";
       }
+    });
+
+    // Accordion toggle logic
+    const headers = document.querySelectorAll(".accordion-header");
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const allContents = document.querySelectorAll(".accordion-content");
+
+        // Close all sections
+        allContents.forEach(c => c.classList.remove("active"));
+
+        // Open this one if it was closed
+        if (!content.classList.contains("active")) {
+          content.classList.add("active");
+        }
+      });
     });
   </script>
 </body>
